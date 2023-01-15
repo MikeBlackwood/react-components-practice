@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import Accordion from "./components/Accordion";
+import './index.css'
 
 function App() {
+
+    const items = [ { id: '1', label : "Header 1", content : 'Content of 1 header'},
+        { id: '2', label : "Header 2", content : 'Content of 2 header'},
+        { id: '3', label : "Header 3", content : 'Content of 3 header'}]
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Accordion items={items}/>
     </div>
   );
 }
