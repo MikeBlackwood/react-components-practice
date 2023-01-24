@@ -7,7 +7,7 @@ function AccordionPage() {
         { id: '3', label : "Header 3", content : 'Content of 3 header'}]
 
     return (
-        <div className="App">
+        <div >
             <Accordion items={items}/>
         </div>
     );
