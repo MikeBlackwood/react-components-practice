@@ -6,6 +6,7 @@ import Sidebar from "./components/Sidebar";
 import ButtonPage from "./pages/ButtonPage";
 import ModalPage from "./pages/ModalPage";
 import TablePage from "./pages/TablePage";
+import Counter from "./components/Counter";
 
 function App() {
 
@@ -27,6 +28,9 @@ function App() {
             </Route>
             <Route path='/table'>
                 <TablePage/>
+            </Route>
+            <Route path='/counter'>
+                <Counter/>
             </Route>
         </div>
     </div>
